@@ -1,0 +1,87 @@
+{
+  "group": {
+    "name": "Basha Restaurant Group",
+    "taxLabel": "GST",
+    "taxRate": 0.05
+  },
+  "branches": [
+    {
+      "id": "pondy_main",
+      "name": "Basha Pondy Main (White Town)",
+      "city": "Pondicherry",
+      "active": true
+    },
+    {
+      "id": "pondy_heritage",
+      "name": "Basha Heritage Town",
+      "city": "Pondicherry",
+      "active": true
+    }
+  ],
+  "categories": [],
+  "menuItems": [],
+  "suppliers": [],
+  "inventory": [],
+  "users": [
+    {
+      "id": "usr_owner",
+      "name": "Basha Owner",
+      "email": "owner@basha.local",
+      "password": "owner123",
+      "role": "owner",
+      "branchIds": ["pondy_main", "pondy_heritage"],
+      "active": true,
+      "salaryAmount": 120000,
+      "salaryType": "monthly"
+    },
+    {
+      "id": "usr_manager_pondy",
+      "name": "Pondy Manager",
+      "email": "manager.pondy@basha.local",
+      "password": "manager123",
+      "role": "manager",
+      "branchIds": ["pondy_main"],
+      "active": true,
+      "salaryAmount": 45000,
+      "salaryType": "monthly"
+    },
+    {
+      "id": "usr_cashier_pondy",
+      "name": "Pondy Cashier",
+      "email": "cashier.pondy@basha.local",
+      "password": "cashier123",
+      "role": "cashier",
+      "branchIds": ["pondy_main"],
+      "active": true,
+      "salaryAmount": 22000,
+      "salaryType": "monthly"
+    },
+    {
+      "id": "usr_kitchen_pondy",
+      "name": "Pondy Kitchen",
+      "email": "kitchen.pondy@basha.local",
+      "password": "kitchen123",
+      "role": "kitchen",
+      "branchIds": ["pondy_main"],
+      "active": true,
+      "salaryAmount": 25000,
+      "salaryType": "monthly"
+    }
+  ],
+  "sessions": [],
+  "orders": [],
+  "kots": [],
+  "tableOrders": [],
+  "supplierBills": [],
+  "supplierOrders": [],
+  "expenses": [],
+  "holidays": [],
+  "stockUsages": [],
+  "attendance": [],
+  "notifications": [],
+  "auditLogs": [],
+  "meta": {
+    "createdAt": "2026-07-03T03:42:00Z",
+    "updatedAt": "2026-07-03T03:42:00Z"
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "group": {
+    "name": "Basha Restaurant Group",
+    "taxLabel": "GST",
+    "taxRate": 0.05
+  },
+  "branches": [
+    {
+      "id": "pondy_main",
+      "name": "Madagadipet",
+      "city": "Pondicherry",
+      "active": true,
+      "address": "Near Tollgate",
+      "phone": "+91 7358611004",
+      "timings": "Everyday: 11:00 AM - 11:30 PM"
+    },
+    {
+      "id": "pondy_heritage",
+      "name": "Basha Heritage Town",
+      "city": "Pondicherry",
+      "active": true
+    }
+  ],
+  "roles": [
+    {
+      "id": "role_admin",
+      "name": "admin",
+      "label": "Admin",
+      "permissions": [
+        "*"
+      ],
+      "active": true
+    },
+    {
+      "id": "role_owner",
+      "name": "owner",
+      "label": "Owner",
+      "permissions": [
+        "dashboard.view",
+        "reports.view",
+        "pos.use",
+        "kitchen.use",
+        "inventory.view",
+        "purchase.manage",
+        "attendance.manage",
+        "bills.view",
+        "delivery.use",
+        "notifications.view",
+        "loans.view",
+        "masters.view",
+        "order.cancel"
+      ],
+      "active": true
+    },
+    {
+      "id": "role_manager",
+      "name": "manager",
+      "label": "Manager",
+      "permissions": [
+        "dashboard.view",
+        "reports.view",
+        "pos.use",
+        "kitchen.use",
+        "inventory.view",
+        "purchase.manage",
+        "order.cancel",
+        "attendance.manage",
+        "bills.view",
+        "delivery.use",
+        "notifications.view",
+        "loans.view",
+        "masters.view"
+      ],
+      "active": true
+    },
+    {
+      "id": "role_server",
+      "name": "server",
+      "label": "Server",
+      "permissions": [
+        "table.use"
+      ],
+      "active": true
+    },
+    {
+      "id": "role_cashier",
+      "name": "cashier",
+      "label": "Cashier",
+      "permissions": [
+        "pos.use",
+        "bills.view",
+        "delivery.use"
+      ],
+      "active": true
+    },
+    {
+      "id": "role_kitchen",
+      "name": "kitchen",
+      "label": "Kitchen",
+      "permissions": [
+        "kitchen.use"
+      ],
+      "active": true
+    },
+    {
+      "id": "role_delivery",
+      "name": "delivery",
+      "label": "Delivery Agent",
+      "permissions": [
+        "delivery.use"
+      ],
+      "active": true
+    },
+    {
+      "id": "role_kot_reader",
+      "name": "kot_reader",
+      "label": "KOT Reader",
+      "permissions": [
+        "kitchen.use",
+        "order.cancel"
+      ],
+      "active": true
+    },
+    {
+      "id": "role_floor_manager",
+      "name": "floor_manager",
+      "label": "Floor Manager",
+      "permissions": [
+        "table.use",
+        "kitchen.use"
+      ],
+      "active": true
+    },
+    {
+      "id": "role_14ba432843c8",
+      "name": "all_rounder_master",
+      "label": "Master",
+      "permissions": [],
+      "active": true
+    },
+    {
+      "id": "role_b611931c377e",
+      "name": "house_keeping",
+      "label": "House Keeping",
+      "permissions": [],
+      "active": true
+    }
+  ],
+  "taxRates": [
+    {
+      "id": "tax_gst_5",
+      "name": "GST 5%",
+      "rate": 0.05,
+      "active": false
+    }
+  ],
+  "landingPageSettings": {
+    "brandName": "MADURAI BASHA",
+    "brandSub": "Royal Biryani & South Indian Cuisine",
+    "estd": "ESTD. 1997",
+    "heroTitle": "The Legendary Taste of Madurai Biryani",
+    "heroDesc": "Indulge in authentic, rich flavours slow-cooked to royal perfection. Handcrafted with our signature blend of secret spices, premium Basmati, and fresh tender meat. Served hot at your convenience.",
+    "aboutLabel": "OUR LEGACY",
+    "aboutTitle": "Crafting Authentic Culinary Memories",
+    "aboutPara1": "Founded with a passion for preserving traditional Tamil cuisine, Madurai Basha brings the majestic aromas and deep culinary traditions of Madurai right to your plate. Our masters follow timeless preparation secrets, slow-dum-cooking using seasoned pots and firewood configurations where possible.",
+    "aboutPara2": "Every batch of Biryani is carefully monitored to achieve the perfect grain length, tender texture, and signature spice-infused profile that has won the hearts of thousands of loyal customers.",
+    "yearsCount": "29+",
+    "yearsLabel": "Years of Perfection",
+    "specTitle": "Our Signature Delicacies",
+    "specialties": [
+      {
+        "id": "spec1",
+        "title": "Madurai Seeraga Samba Mutton Biryani",
+        "tag": "Legendary",
+        "price": "280",
+        "desc": "Fragrant indigenous Seeraga Samba rice cooked slowly with rich, juicy, fall-off-the-bone tender mutton pieces and spices."
+      },
+      {
+        "id": "spec2",
+        "title": "Basha Special Chicken Biryani",
+        "tag": "All-Time Favorite",
+        "price": "220",
+        "desc": "Succulent marinated chicken loaded with robust spices, layered with fluffy long-grain Basmati, and slow-dum-cooked."
+      },
+      {
+        "id": "spec3",
+        "title": "Madurai Mutton Elumbu Curry",
+        "tag": "Classic",
+        "price": "160",
+        "desc": "Traditional rich bone gravy simmered with shallots, crushed pepper, and roasted spices in traditional chettinad style."
+      }
+    ],
+    "branch1Title": "Pondicherry Main Branch",
+    "branch1Addr": "📍 45, Mission Street, Heritage Town,\nPuducherry, 605001.",
+    "branch1Hours": "Everyday: 11:00 AM - 11:30 PM",
+    "branch2Title": "Madurai Royal Junction",
+    "branch2Addr": "📍 12, West Tower Street, Near Temple,\nMadurai, Tamil Nadu, 625001.",
+    "branch2Hours": "Everyday: 11:00 AM - Midnight",
+    "footerDesc": "Bringing legendary, royal dum cooked Seeraga Samba and Basmati biryani to your doorstep. Since 1997.",
+    "brandLogo": "/api/public/landing-image/brandLogo",
+    "heroImage": "/api/public/landing-image/heroImage",
+    "loginHeroTitle": "Control every branch without sitting inside every branch.",
+    "loginHeroDesc": "Billing, KOT, stock, purchases, and daily owner visibility for your Pondicherry restaurant group.",
+    "loginCardTitle": "Sign in",
+    "loginCardSubtitle": "Use admin login for setup, owner login for reports."
+  },
+  "users": [
+    {
+      "id": "usr_admin",
+      "name": "Admin",
+      "email": "admin@basha.local",
+      "password": "admin123",
+      "role": "admin",
+      "branchIds": [
+        "pondy_main",
+        "pondy_heritage"
+      ],
+      "active": true,
+      "salaryAmount": 0,
+      "salaryType": "monthly"
+    },
+    {
+      "id": "usr_server_pondy",
+      "name": "Pondy Server",
+      "email": "server.pondy@basha.local",
+      "password": "server123",
+      "role": "server",
+      "branchIds": [
+        "pondy_main"
+      ],
+      "active": true,
+      "salaryAmount": 0,
+      "salaryType": "monthly"
+    },
+    {
+      "id": "usr_kitchen_pondy",
+      "name": "Pondy Kitchen",
+      "email": "kitchen.pondy@basha.local",
+      "password": "kitchen123",
+      "role": "kitchen",
+      "branchIds": [
+        "pondy_main"
+      ],
+      "active": true,
+      "salaryAmount": 0,
+      "salaryType": "monthly"
+    }
+  ],
+  "categories": [],
+  "menuItems": [],
+  "suppliers": [],
+  "inventory": [],
+  "orders": [],
+  "tableOrders": [],
+  "kots": [],
+  "supplierBills": [],
+  "supplierOrders": [],
+  "expenses": [],
+  "loans": [],
+  "holidays": [],
+  "stockUsages": [],
+  "attendance": [],
+  "notifications": [],
+  "customers": [],
+  "partnerShops": [],
+  "partnerSettlements": [],
+  "salaryPayments": [],
+  "owners": [],
+  "ownerDraws": [],
+  "coupons": [],
+  "sessions": [],
+  "auditLogs": [],
+  "meta": {
+    "updatedAt": "2026-07-25T09:57:48.335Z",
+    "resetAt": "2026-07-25T09:57:48.332Z"
+  },
+  "supplierPayments": [],
+  "yieldMappings": [],
+  "ingredientYields": [],
+  "menuItemConsumptions": []
+}

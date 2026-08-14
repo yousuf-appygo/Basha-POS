@@ -1,0 +1,20 @@
+{
+  "name": "basha-restaurant-os",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node src/server.js",
+    "build": "echo 'No build required'",
+    "lint": "echo 'No lint required'",
+    "start": "NODE_ENV=production node src/server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@google/genai": "^2.10.0",
+    "bcryptjs": "^3.0.3",
+    "mongodb": "^7.4.0"
+  }
+}

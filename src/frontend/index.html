@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basha Restaurant OS</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- High-fidelity skeleton loading screen to improve perceived initialization performance -->
+      <style>
+        .skel-container {
+          display: flex;
+          min-height: 100vh;
+          background: #121212;
+          color: #e5e5e5;
+          font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+        }
+        .skel-sidebar {
+          width: 260px;
+          background: #18181b;
+          border-right: 1px solid #27272a;
+          padding: 24px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        .skel-logo {
+          height: 36px;
+          background: #27272a;
+          border-radius: 6px;
+          width: 70%;
+        }
+        .skel-nav-item {
+          height: 40px;
+          background: #27272a;
+          border-radius: 6px;
+          width: 100%;
+        }
+        .skel-main {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+        .skel-header {
+          height: 70px;
+          border-bottom: 1px solid #27272a;
+          padding: 0 24px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: #18181b;
+        }
+        .skel-header-title {
+          height: 24px;
+          background: #27272a;
+          border-radius: 4px;
+          width: 150px;
+        }
+        .skel-header-actions {
+          display: flex;
+          gap: 12px;
+        }
+        .skel-header-btn {
+          height: 36px;
+          width: 100px;
+          background: #27272a;
+          border-radius: 6px;
+        }
+        .skel-content {
+          padding: 24px;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+        .skel-metrics {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 16px;
+        }
+        @media (max-width: 980px) {
+          .skel-sidebar {
+            display: none;
+          }
+          .skel-metrics {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+        @media (max-width: 480px) {
+          .skel-metrics {
+            grid-template-columns: 1fr;
+          }
+        }
+        .skel-card {
+          background: #18181b;
+          border: 1px solid #27272a;
+          border-radius: 8px;
+          padding: 16px;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          min-height: 100px;
+        }
+        .skel-line-short {
+          height: 14px;
+          background: #27272a;
+          border-radius: 4px;
+          width: 40%;
+        }
+        .skel-line-long {
+          height: 20px;
+          background: #27272a;
+          border-radius: 4px;
+          width: 80%;
+        }
+        .skel-grid-2 {
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          gap: 24px;
+        }
+        @media (max-width: 768px) {
+          .skel-grid-2 {
+            grid-template-columns: 1fr;
+          }
+        }
+        .skel-table-panel {
+          background: #18181b;
+          border: 1px solid #27272a;
+          border-radius: 8px;
+          padding: 20px;
+          min-height: 300px;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+        }
+        .skel-pulse {
+          animation: skel-shimmer 1.5s infinite ease-in-out;
+        }
+        @keyframes skel-shimmer {
+          0% {
+            opacity: 0.6;
+          }
+          50% {
+            opacity: 0.35;
+          }
+          100% {
+            opacity: 0.6;
+          }
+        }
+      </style>
+      <div class="skel-container">
+        <div class="skel-sidebar">
+          <div class="skel-logo skel-pulse"></div>
+          <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 12px;">
+            <div class="skel-nav-item skel-pulse"></div>
+            <div class="skel-nav-item skel-pulse" style="animation-delay: 0.1s;"></div>
+            <div class="skel-nav-item skel-pulse" style="animation-delay: 0.2s;"></div>
+            <div class="skel-nav-item skel-pulse" style="animation-delay: 0.3s;"></div>
+            <div class="skel-nav-item skel-pulse" style="animation-delay: 0.4s;"></div>
+            <div class="skel-nav-item skel-pulse" style="animation-delay: 0.5s;"></div>
+          </div>
+        </div>
+        <div class="skel-main">
+          <div class="skel-header">
+            <div class="skel-header-title skel-pulse"></div>
+            <div class="skel-header-actions">
+              <div class="skel-header-btn skel-pulse"></div>
+              <div class="skel-header-btn skel-pulse" style="animation-delay: 0.15s;"></div>
+            </div>
+          </div>
+          <div class="skel-content">
+            <div class="skel-metrics">
+              <div class="skel-card">
+                <div class="skel-line-short skel-pulse"></div>
+                <div class="skel-line-long skel-pulse"></div>
+              </div>
+              <div class="skel-card">
+                <div class="skel-line-short skel-pulse" style="animation-delay: 0.1s;"></div>
+                <div class="skel-line-long skel-pulse" style="animation-delay: 0.1s;"></div>
+              </div>
+              <div class="skel-card">
+                <div class="skel-line-short skel-pulse" style="animation-delay: 0.2s;"></div>
+                <div class="skel-line-long skel-pulse" style="animation-delay: 0.2s;"></div>
+              </div>
+              <div class="skel-card">
+                <div class="skel-line-short skel-pulse" style="animation-delay: 0.3s;"></div>
+                <div class="skel-line-long skel-pulse" style="animation-delay: 0.3s;"></div>
+              </div>
+            </div>
+            <div class="skel-grid-2">
+              <div class="skel-table-panel">
+                <div class="skel-line-long skel-pulse" style="width: 30%;"></div>
+                <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 10px;">
+                  <div class="skel-nav-item skel-pulse" style="height: 32px;"></div>
+                  <div class="skel-nav-item skel-pulse" style="height: 32px; animation-delay: 0.1s;"></div>
+                  <div class="skel-nav-item skel-pulse" style="height: 32px; animation-delay: 0.2s;"></div>
+                  <div class="skel-nav-item skel-pulse" style="height: 32px; animation-delay: 0.3s;"></div>
+                  <div class="skel-nav-item skel-pulse" style="height: 32px; animation-delay: 0.4s;"></div>
+                </div>
+              </div>
+              <div class="skel-table-panel" style="min-height: 200px;">
+                <div class="skel-line-short skel-pulse"></div>
+                <div style="display: flex; gap: 12px; margin-top: 10px; flex-wrap: wrap;">
+                  <div class="skel-header-btn skel-pulse" style="width: 80px; height: 32px;"></div>
+                  <div class="skel-header-btn skel-pulse" style="width: 80px; height: 32px; animation-delay: 0.1s;"></div>
+                  <div class="skel-header-btn skel-pulse" style="width: 80px; height: 32px; animation-delay: 0.2s;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Load React, ReactDOM, PropTypes, and Recharts globally via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prop-types@15.8.1/prop-types.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/recharts@2.12.7/umd/Recharts.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

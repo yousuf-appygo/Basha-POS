@@ -1,0 +1,10 @@
+{
+  "name": "Basha Restaurant OS",
+  "description": "A comprehensive operating system for Basha Restaurant, featuring POS, kitchen display, inventory, and reports.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
